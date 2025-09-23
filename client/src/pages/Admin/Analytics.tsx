@@ -1,4 +1,4 @@
-import * as React from "react";
+//import * as React from "react";
 import {
   Card,
   CardHeader,
@@ -203,7 +203,7 @@ const Analytics = () => {
                   paddingAngle={5}
                   dataKey="value"
                   label={({ name, percent }) =>
-                    `${name}: ${(percent * 100).toFixed(0)}%`
+                    `${name}: ${((percent ?? 0) * 100).toFixed(0)}%`
                   }
                 >
                   {userPieData.map((_entry, index) => (

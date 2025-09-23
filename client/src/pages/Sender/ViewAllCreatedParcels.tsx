@@ -61,7 +61,7 @@ import {
 import { Parcel } from "@/type";
 import toast from "react-hot-toast";
 import { LoadingSkeleton } from "@/components/LoadingSkeleton";
-import { ParcelEditForm } from "../Sender/ParcelEditForm";
+import { ParcelEditForm } from "./ParcelEditForm";
 
 // Badge color helper
 const getStatusBadgeVariant = (status: string) => {

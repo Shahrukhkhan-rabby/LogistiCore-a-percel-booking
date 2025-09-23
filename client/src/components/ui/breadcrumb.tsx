@@ -46,7 +46,6 @@ function Button({
     asChild?: boolean
   }) {
   const Comp = asChild ? Slot : "button"
-
   return (
     <Comp
       data-slot="button"
@@ -56,4 +55,39 @@ function Button({
   )
 }
 
-export { Button, buttonVariants }
+// Breadcrumb components
+const Breadcrumb = ({ children, className, ...props }: React.HTMLAttributes<HTMLElement>) => (
+  <nav className={className} {...props}>{children}</nav>
+)
+
+const BreadcrumbList = ({ children, className, ...props }: React.OlHTMLAttributes<HTMLOListElement>) => (
+  <ol className={className} {...props}>{children}</ol>
+)
+
+const BreadcrumbItem = ({ children, className, ...props }: React.LiHTMLAttributes<HTMLLIElement>) => (
+  <li className={className} {...props}>{children}</li>
+)
+
+const BreadcrumbLink = ({ href, children, className, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }) => (
+  <a href={href} className={className} {...props}>{children}</a>
+)
+
+const BreadcrumbPage = ({ children, className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
+  <span className={className} {...props}>{children}</span>
+)
+
+const BreadcrumbSeparator = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
+  <span className={cn("mx-1", className)} {...props}>/</span>
+)
+
+
+export {
+  Button,
+  buttonVariants,
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+}

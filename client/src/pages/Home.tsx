@@ -1,9 +1,9 @@
-import HeroSection from '@/components/modules/Home/HeroSection';
+import HeroSection from '@/components/modules/Home /HeroSection';
 import heroBackground from '../assets/images/parce-bannr.jpg';
-import HowItWorks from '@/components/modules/Home/HowItWorks';
-import KeyFeatures from '@/components/modules/Home/KeyFeatures';
-import Testimonials from '@/components/modules/Home/Testimonials';
-import CallToAction from '@/components/modules/Home/CallToAction';
+import HowItWorks from '@/components/modules/Home /HowItWorks';
+import KeyFeatures from '@/components/modules/Home /KeyFeatures';
+import Testimonials from '@/components/modules/Home /Testimonials';
+import CallToAction from '@/components/modules/Home /CallToAction';
 import ChatWidget from '@/components/ChatWidget'; // Import the chat widget
 
 const Home = () => {
