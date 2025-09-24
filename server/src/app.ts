@@ -24,7 +24,7 @@ app.use(cors({
     credentials: true
 }))
 
-app.use('/api/v1',router)
+app.use('/',router)
 
 app.get('/', (req: Request, res: Response) => {
    res.send("Welcome to Parcel Delivery System")
